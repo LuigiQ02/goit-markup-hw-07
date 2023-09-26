@@ -425,9 +425,10 @@ img{
 .customer__list{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    gap: 72px;
+    justify-content: center;
     align-items: center;
+    row-gap: 72px;
+    column-gap: 16px;
 }
 
 .customer__items{
