@@ -1473,20 +1473,11 @@ img{
     
         /* Footer Section */
 .footer {
-    background-color: var(--navy);
-    display: flex;
-    width: 428px;
-    margin: auto;
-    padding: 97.5px 0;
-    overflow: auto;
+    width: 768px;
 }
     
 .footer__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 396px;
-    margin: 0 auto;
+    width: 736px;
 }
 .section__footer__container {
     display: flex;
@@ -1563,13 +1554,13 @@ img{
     height: 24px;
     width: 24px;
 } 
-        /* Footer Email Section */
-.footer__email__container {
+    /* Footer Email Section */
+/* .footer__email__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 72px;
-}
+} */
 .email__container__txt {
     color: var(--WHITE, #FFF);
     font-family: Roboto;
@@ -1587,19 +1578,7 @@ img{
 }
     
 .footer__form input {
-    outline: none;
-    padding: 8px 0;
-    padding-left: 16px;
-    height: 40px;
-    width: 398px;
-    font-family: inherit;
-    font-size: 12px;
-    letter-spacing: 0.48px;
-    background: transparent;
-    border: 1px solid var(--white);
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--white);
+    width: 264px;
 }
     
 .footer__form input::placeholder {
