@@ -1281,6 +1281,8 @@ img{
         /* First Section */
 .section {
     padding: 96px 0;
+    width: 768px;
+    margin: auto;
 }
     
 .features__container {
