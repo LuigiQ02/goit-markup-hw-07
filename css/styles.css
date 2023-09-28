@@ -482,15 +482,17 @@ img{
 
 .footer__container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 72px;
     width: 396px;
     margin: 0 auto;
 }
 .section__footer__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .footer__icon__txt{
@@ -538,8 +540,8 @@ img{
 .footer__icon__container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 72px;
+    column-gap: 72px;
+    text-align: center;
 }
 .footer__list__icons {
     display: flex;
@@ -574,9 +576,7 @@ img{
 .footer__email__container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 72px;
-    
+    text-align: center;
 }
 
 .email__container__txt{
@@ -590,8 +590,9 @@ img{
 }
 .footer__form{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
@@ -1479,10 +1480,11 @@ img{
 .footer__container {
     width: 736px;
 }
+
 .section__footer__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: left;
 }
     
 .footer__icon__txt {
@@ -1526,12 +1528,16 @@ img{
 .footer__icon__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 72px;
+    text-align: left;
 }
 .footer__list__icons {
     display: flex;
     column-gap: 24px;
+}
+.footer__email__container{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 .footer__icon__link {
     display: flex;
@@ -1554,13 +1560,6 @@ img{
     height: 24px;
     width: 24px;
 } 
-    /* Footer Email Section */
-/* .footer__email__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 72px;
-} */
 .email__container__txt {
     color: var(--WHITE, #FFF);
     font-family: Roboto;
@@ -1569,14 +1568,7 @@ img{
     line-height: 24px;
     letter-spacing: 0.32px;
     margin-bottom: 16px;
-}
-.footer__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-}
-    
+}   
 .footer__form input {
     width: 264px;
 }
