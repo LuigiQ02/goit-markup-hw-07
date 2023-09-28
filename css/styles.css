@@ -540,7 +540,6 @@ img{
 .footer__icon__container{
     display: flex;
     flex-direction: column;
-    column-gap: 72px;
     text-align: center;
 }
 .footer__list__icons {
@@ -1538,6 +1537,7 @@ img{
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-right: 100px;
 }
 .footer__icon__link {
     display: flex;
