@@ -44,6 +44,12 @@ img {
     background: var(--WHITE, #FFF);
 }
 
+.header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .container {
     display: flex;
     width: 396px;
@@ -188,6 +194,100 @@ img {
 
 .address__item {
     display: inline-block;
+}
+
+/* Mobile Nav Burger */
+.header__button{
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    height: 22px;
+}
+
+.header__button svg{
+    fill: var(--navybluemodal);
+}
+.mobile__nav{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--white);
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.mobile__nav.is-open{
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.mobile__nav__close{
+    background-color: var(--cornflower);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    left: 360px;
+    top: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+.mobile__nav__menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile__nav__close svg{
+    fill: var(--navy);
+    fill: currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8px;
+    height: 8px;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+.mobile__menu__link{
+    text-decoration: none;
+    color: var(--navy);
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.mobile__menu__link:hover{
+    color: var(--ocean);
+}
+
+.mobile__address__link{
+    text-decoration: none;
+    color: var(--slate);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
 }
 
 /* Hero Section */
@@ -1246,6 +1346,14 @@ img {
 
     .address__item {
         display: flex;
+    }
+
+    .header__button{
+        display: none;
+    }
+
+    .mobile__nav{
+        display: none;
     }
 
     /* Hero Section */

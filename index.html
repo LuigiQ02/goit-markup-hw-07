@@ -47,6 +47,67 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="header__button js-open-menu">
+          <svg viewbox="0 0 40 40">
+            <use href="images/icon-hamburger.svg#hamburger-icon">
+          </svg>
+        </button>
+        <nav class="mobile__nav js-menu-container is-open">
+          <ul class="mobile__nav__menu">
+            <li class="mobile__nav__menu__items">
+              <a href="/index.html" class="mobile__menu__link">Studio</a>
+            </li>
+            <li class="mobile__nav__menu__items">
+              <a href="/portfolio.html" class="mobile__menu__link">Portfolio</a>
+            </li>
+            <li class="mobile__nav__menu__items">
+              <a href="/" class="mobile__menu__link">Contacts</a>
+            </li>
+          </ul>
+          <ul class="mobile__address__list">
+            <li class="mobile__address__item">
+              <a href="mailto:info@devstudio.com" class="mobile__address__link">info@devstudio.com</a>
+            </li>
+            <li class="mobile__address__item">
+              <a href="tel:+11000111-11-11" class="mobile__address__link">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+          <button class="mobile__nav__close js-close-menu">
+            <svg>
+              <use href="images/icon-modal.svg#moda-close-btn"/>
+            </svg>
+          </button>
+          <ul class="team__list__icons">
+            <li class="team__items__icons">
+              <a href="#" class="team__icon__link">
+                <svg>
+                  <use href="images/icons.svg#instagram" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="team__icon__link">
+                <svg>
+                  <use href="images/icons.svg#twitter" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="team__icon__link">
+                <svg>
+                  <use href="images/icons.svg#facebook" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="team__icon__link">
+                <svg>
+                  <use href="images/icons.svg#linkedin" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <!-- Main Section -->
@@ -485,5 +546,6 @@
       </div>
     </div>
     <script src="js/modal.js"></script>
+    <script src="/js/mobile-menu.js"></script>
   </body>
 </html>
