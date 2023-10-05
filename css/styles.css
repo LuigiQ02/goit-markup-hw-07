@@ -34,8 +34,7 @@ img {
 }
 
 .header {
-    overflow: auto;
-    width: 428px;
+    /* overflow: auto; */
     margin: auto;
     padding: 25.5px 16px;
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
@@ -51,12 +50,12 @@ img {
 
 .container {
     display: flex;
-    width: 396px;
     margin: 0 auto;
     align-items: center;
 }
 
 .hero__container {
+    padding: 0 16px;
     flex-direction: column;
     gap: 48px;
 }
@@ -209,18 +208,18 @@ img {
 .mobile__nav{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin: auto;
     position: fixed;
     bottom: 0;
     right: 0;
-    left: 0;
-    top: 0;
+    left: -100%;
+    top:0;
     height: 100%;
     width: 100%;
     background-color: var(--white);
     visibility: hidden;
     pointer-events: none;
-    opacity: 0;
     z-index: 1;
     padding-top: 80px;
 }
@@ -228,7 +227,7 @@ img {
 .mobile__nav.is-open{
     visibility: visible;
     pointer-events: auto;
-    opacity: 1;
+    left: 0;
 }
 
 .mobile__nav__close{
@@ -249,9 +248,9 @@ img {
 }
 
 .mobile__nav__menu{
+    padding-left: 40px;
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
     gap: 40px;
 }
 .mobile__nav__close svg{
@@ -266,12 +265,17 @@ img {
     transition-duration: 250ms;
 }
 
+.mobile__address__div{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+
 .mobile__address__list{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-left: 40px;
-    margin-top: 268px;
 }
 .mobile__menu__link{
     text-decoration: none;
@@ -328,8 +332,6 @@ img {
 .mobile__list__icon{
     display: flex;
     column-gap: 56px;
-    margin-left: 40px;
-    margin-top: 48px;
 }
 
 .mobile__team__link{
@@ -361,9 +363,8 @@ img {
     background: var(--grey, rgba(46, 47, 66, 0.70));
     text-align: center;
     padding: 188px 0;
-    width: 428px;
     margin: auto;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .hero::before {
@@ -417,7 +418,6 @@ img {
 
 .section {
     padding: 96px 0;
-    width: 428px;
     margin: auto;
 }
 
@@ -426,6 +426,7 @@ img {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 16px;
 }
 
 .features__list {
@@ -490,16 +491,14 @@ img {
 /* Third Section */
 .team {
     background-color: var(--cloud);
-    width: 428px;
     margin: auto;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .team__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 396px;
     margin: auto;
 }
 
@@ -586,14 +585,12 @@ img {
 
 .section__customers {
     padding: 96px 0;
-    width: 428px;
     margin: auto;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .customer__container {
     margin: 0 auto;
-    width: 396px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -659,10 +656,9 @@ img {
 .footer {
     background-color: var(--navy);
     display: flex;
-    width: 428px;
     margin: auto;
     padding: 97.5px 0;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .footer__container {
@@ -671,7 +667,6 @@ img {
     justify-content: center;
     column-gap: 24px;
     row-gap: 72px;
-    width: 396px;
     margin: 0 auto;
 }
 
@@ -784,12 +779,16 @@ img {
     gap: 24px;
 }
 
+.form__input{
+    width: 100%;
+    padding: 0 16px;
+}
+
 .footer__form input {
     outline: none;
     padding: 8px 0;
     padding-left: 16px;
     height: 40px;
-    width: 398px;
     font-family: inherit;
     font-size: 12px;
     letter-spacing: 0.48px;
@@ -798,6 +797,7 @@ img {
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: var(--white);
+    width: 100%;
 }
 
 .footer__form input::placeholder {
@@ -1267,7 +1267,6 @@ img {
 
 @media screen and (min-width:768px) {
     .header {
-        overflow: auto;
         width: 768px;
         margin: auto;
         border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
@@ -1429,7 +1428,6 @@ img {
         padding: 188px 0;
         width: 768px;
         margin: auto;
-        overflow: auto;
     }
 
     .hero::before {
@@ -1541,7 +1539,6 @@ img {
         background-color: var(--cloud);
         width: 768px;
         margin: auto;
-        overflow: auto;
     }
 
     .team__container {
@@ -1626,7 +1623,6 @@ img {
     /* Customers Section */
     .section__customers {
         width: 768px;
-        overflow: auto;
     }
 
     .customer__container {
