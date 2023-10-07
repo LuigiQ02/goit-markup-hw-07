@@ -61,7 +61,6 @@ img {
 }
 
 .section__container__buttons {
-    width: 1158px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
@@ -1811,7 +1810,6 @@ img {
 
 @media screen and (min-width:1158px) {
     .header {
-        width: 1440px;
         border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
         background: var(--WHITE, #FFF);
@@ -1936,7 +1934,6 @@ img {
 
     /* Hero Section */
     .hero {
-        width: 1440px;
         position: relative;
         background: var(--grey, rgba(46, 47, 66, 0.70));
         text-align: center;
@@ -1996,7 +1993,6 @@ img {
     /* First Section */
 
     .section {
-        width: 1440px;
         padding: 120px 0;
     }
 
@@ -2043,7 +2039,6 @@ img {
     /* Second Section */
     .section__tech {
         display: flex;
-        width: 1440px;
         padding-bottom: 120px;
         margin: auto;
     }
@@ -2157,7 +2152,6 @@ img {
     /* Customers Section */
 
     .section__customers {
-        width: 1440px;
         padding: 120px 0;
     }
 
@@ -2222,7 +2216,6 @@ img {
 
     /* Footer Section */
     .footer {
-        width: 1440px;
         background-color: var(--navy);
         display: flex;
         padding: 120px 0;
@@ -2230,7 +2223,6 @@ img {
 
     .footer__container {
         display: flex;
-        width: 1158px;
         margin: 0 auto;
         gap: unset;
         justify-content: flex-start;
