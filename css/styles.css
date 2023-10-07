@@ -205,6 +205,7 @@ img {
 .header__button svg{
     fill: var(--navybluemodal);
 }
+
 .mobile__nav{
     display: flex;
     flex-direction: column;
@@ -222,12 +223,17 @@ img {
     pointer-events: none;
     z-index: 1;
     padding-top: 80px;
+    transform: translateX(100%);
+    transition: var(--deafault-transition);
+    tran
 }
 
 .mobile__nav.is-open{
     visibility: visible;
     pointer-events: auto;
     left: 0;
+    transform: translateX(0);
+    transition-duration: 250ms;
 }
 
 .mobile__nav__close{
@@ -1780,6 +1786,11 @@ img {
         width: 264px;
     }
 
+    .form__input{
+        width: auto;
+        padding: 0;
+    }
+
     .footer__form input::placeholder {
         color: var(--white);
     }
@@ -2366,6 +2377,11 @@ img {
         border-radius: 4px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         color: var(--white);
+    }
+
+    .form__input{
+        width: auto;
+        padding: 0;
     }
 
     .footer__form input::placeholder {
