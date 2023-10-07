@@ -224,8 +224,7 @@ img {
     z-index: 1;
     padding-top: 80px;
     transform: translateX(100%);
-    transition: var(--deafault-transition);
-    tran
+    transition-duration: 250ms;
 }
 
 .mobile__nav.is-open{
@@ -1273,7 +1272,6 @@ img {
 
 @media screen and (min-width:768px) {
     .header {
-        width: 768px;
         margin: auto;
         border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -1282,7 +1280,6 @@ img {
 
     .container {
         display: flex;
-        width: 736px;
         margin: 0 auto;
         align-items: center;
         justify-content: center;
@@ -1432,7 +1429,6 @@ img {
         background: var(--grey, rgba(46, 47, 66, 0.70));
         text-align: center;
         padding: 188px 0;
-        width: 768px;
         margin: auto;
     }
 
@@ -1485,7 +1481,6 @@ img {
     /* First Section */
     .section {
         padding: 96px 0;
-        width: 768px;
         margin: auto;
     }
 
@@ -1543,7 +1538,6 @@ img {
     /* Third Section */
     .team {
         background-color: var(--cloud);
-        width: 768px;
         margin: auto;
     }
 
@@ -1627,14 +1621,6 @@ img {
     }
 
     /* Customers Section */
-    .section__customers {
-        width: 768px;
-    }
-
-    .customer__container {
-        width: 736px;
-    }
-
     .section__customer__header {
         color: var(--navybluemodal);
         text-align: center;
@@ -1674,14 +1660,6 @@ img {
 
 
     /* Footer Section */
-    .footer {
-        width: 768px;
-    }
-
-    .footer__container {
-        width: 736px;
-    }
-
     .section__footer__container {
         display: flex;
         flex-direction: column;
