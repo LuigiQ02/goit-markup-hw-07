@@ -913,6 +913,9 @@ img {
 
 .section__abt__items {
     max-width: 360px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+                0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .abt__items__figure {
@@ -934,11 +937,9 @@ img {
     height: 100%;
     background-color: var(--iris);
     padding: 40px 32px;
-    top: 0;
+    top: 100%;
     left: 0;
-    right: 0;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(100%);
 }
 
 .section__abt__title {
@@ -2395,6 +2396,7 @@ img {
     /* Buttons Section Portfolio */
     .btn {
         padding-top: 96px;
+        display: flex;
     }
 
     .btn__container {
@@ -2422,5 +2424,18 @@ img {
         background: #404BBF;
         box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
         border-color: var(--ocean);
+    }
+
+    .abt__items__figure figcaption {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--iris);
+        padding: 40px 32px;
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateY(100%);
     }
 }
