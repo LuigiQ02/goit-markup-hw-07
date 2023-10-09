@@ -65,8 +65,9 @@ img {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    column-gap: 24px;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: flex-start;
 }
 
 .nav {
@@ -203,6 +204,7 @@ img {
 
 .header__button svg{
     fill: var(--navybluemodal);
+    height: 21px;
 }
 
 .mobile__nav{
@@ -221,9 +223,9 @@ img {
     visibility: hidden;
     pointer-events: none;
     z-index: 1;
-    padding-top: 80px;
     transform: translateX(100%);
     transition-duration: 250ms;
+    padding: 80px 40px 40px;
 }
 
 .mobile__nav.is-open{
@@ -244,7 +246,7 @@ img {
     height: 24px;
     border-radius: 12px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    left: 380px;
+    right: 24px;
     top: 24px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
@@ -252,7 +254,6 @@ img {
 }
 
 .mobile__nav__menu{
-    padding-left: 40px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -270,7 +271,6 @@ img {
 }
 
 .mobile__address__div{
-    padding: 40px;
     display: flex;
     flex-direction: column;
     row-gap: 48px;
@@ -335,7 +335,7 @@ img {
 
 .mobile__list__icon{
     display: flex;
-    column-gap: 56px;
+    justify-content: space-between;
 }
 
 .mobile__team__link{
@@ -366,9 +366,8 @@ img {
     position: relative;
     background: var(--grey, rgba(46, 47, 66, 0.70));
     text-align: center;
-    padding: 188px 0;
+    padding: 112px 0;
     margin: auto;
-    /* overflow: auto; */
 }
 
 .hero::before {
@@ -845,7 +844,7 @@ img {
 
 /* Buttons Section Portfolio */
 .btn {
-    padding-top: 96px;
+    padding-top: 48px;
 }
 
 .btn__container {
@@ -885,9 +884,9 @@ img {
 .section__abt__list {
     display: flex;
     align-content: center;
-    justify-content: space-between;
-    padding-top: 72px;
-    padding-bottom: 120px;
+    justify-content: center;
+    padding-top: 48px;
+    padding-bottom: 96px;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
@@ -1022,7 +1021,7 @@ img {
     height: 24px;
     border-radius: 12px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    left: 360px;
+    right: 24px;
     top: 24px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
